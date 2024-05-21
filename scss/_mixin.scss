@@ -1,0 +1,40 @@
+@mixin text-sm(){
+    font-size: 16px;
+    font-weight: 500;
+}
+@mixin text-md(){
+    font-size: 18px;
+    font-weight: 400;
+}
+@mixin text-lg(){
+    font-size: 24px;
+    font-weight: 700;
+}
+@mixin df($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin dfc($align: center, $justify: center){
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin btn($padding: 9px 18px, $background: $bg-light){
+    padding: $padding;
+    border-radius: 24px;
+    border: none;
+    transition: .5s;
+    background: $background;
+    color: $bg-text;
+    &:hover{
+        cursor: pointer;
+        opacity: .7;
+        background: $bg-sy;
+        color: $bg-text;
+    }
+    &:active{
+        transform: scale(.8);
+    }
+}

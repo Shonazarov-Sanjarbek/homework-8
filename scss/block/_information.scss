@@ -1,0 +1,31 @@
+.information{
+    width: 100%;
+    margin-top: 176px;
+    &__block{
+        width: 100%;
+        @include df();
+    }
+    &__wrapper{
+        width: 100%;
+        @include df();
+        gap: 32px;
+    }
+    &__card{
+        width: calc(33.33% - 21.33px);
+        height: 189px;
+        background: $bg-py;
+        border-radius: 8px;
+        @include df(center, center);
+    }
+    &__desc{
+        max-width: 284px;
+        p{
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 25px;
+            color: $bg-light;
+            text-align: center;
+        }
+        
+    }
+}

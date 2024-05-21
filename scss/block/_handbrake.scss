@@ -1,0 +1,182 @@
+.handbrake{
+    width: 100%;
+    margin-top: 63px;
+    &__block{
+        width: 100%;
+        @include dfc();
+        gap: 96px;
+    }
+    &__subtitle{
+        max-width: 387px;
+        @include dfc();
+        gap: 15px;
+        p{
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 43px;
+            text-align: center;
+            color: $bg-py;
+        }
+        div{
+            width: 160px;
+            height: 8px;
+            background: $bg-sy;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include dfc();
+        gap: 128px;
+    }
+    &__card{
+        width: 100%;
+        @include df(center, start);
+        gap: 112px;   
+    }
+    &__img{
+        width: calc(50% - 56px);
+        img{
+            width: 100%;
+            height: 408px;
+        }
+    }
+    &__content{
+        width: calc(50% - 56px);
+        @include dfc(start, start);
+        gap: 16px;
+    }
+    &__title{
+        width: 100%;
+        p{
+            @include text-sm();
+            line-height: 21px;
+            color: $bg-text;
+        }
+    }
+    &__desc{
+        width: 100%;
+        margin-bottom: 16px;
+        p{
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 42px;
+            color: $bg-py;
+        }
+    }
+    &__text{
+        max-width: 100%;
+        @include text-md();
+        color: $bg-dark;
+    }
+    &__output{
+        width: 100%;
+        margin-top: 8px;
+        p{
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 29px;
+            color: $bg-py;
+        }
+    }
+    &__box__wrapper{
+        width: 100%;
+        @include dfc(start, center);
+        display: flex; 
+        gap: 16px;
+    }
+    &__box{
+        width: 100%;
+        @include df(start, start);
+        gap: 16px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+        p{
+            @include text-sm();
+            line-height: 21px;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .handbrake{
+        &__block{
+            width: 100%;
+        }
+        &__subtitle{
+            p{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+            div{
+                width: 130px;
+                height: 6px;
+            }
+        }
+        &__card{
+            @include dfc(center, start);
+        }
+        &__img{
+            width: 100%;
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 1000px){
+    .handbrake{
+        &__block{
+            width: 100%;
+        }
+        &__subtitle{
+            p{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+            div{
+                width: 130px;
+                height: 6px;
+            }
+        }
+        &__card{
+            @include dfc(center, start);
+        }
+        &__img{
+            width: 100%;
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 900px){
+    .handbrake{
+        &__block{
+            width: 100%;
+        }
+        &__subtitle{
+            p{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+            div{
+                width: 130px;
+                height: 6px;
+            }
+        }
+        &__card{
+            @include dfc(center, start);
+        }
+        &__img{
+            width: 100%;
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.footer{
+    max-width: 100%;
+    background: $bg-py;
+    margin-top: 64px;
+    @include df(start, start);
+    &__block{
+        width: 100%;
+        @include df(); 
+        margin-top: 32px;
+        @include df(space-between, center);
+        border-top: 1px solid $bg-light;
+    }
+    &__desc{
+        max-width: 436px;
+        @include df();
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21px;
+        color: $bg-dark;
+        span{
+            color: $bg-light;
+        }
+    }
+    &__text{
+        max-width: 187px;
+        @include df();
+        @include text-sm;
+        line-height: 21px;
+        color: $bg-dark;
+        span{
+            color: $bg-light;
+        }
+    }
+}
+
+
+@media (max-width: 1000px){
+    .footer{
+        &__block{
+            @include dfc();
+            gap: 10px;
+        }
+        &__desc{
+            font-size: 8px;
+            font-weight: 700;
+            line-height: 10px;
+        }
+    }
+}
